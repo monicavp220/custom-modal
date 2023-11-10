@@ -1,0 +1,714 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,700&display=swap");
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    overflow: hidden;
+}
+
+.cardImage {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 470px;
+    height: 500px;
+    background: #FFFFFF;
+    box-shadow: 0px 0px 10px #02396B4D;
+    opacity: 1;
+    z-index: 1;
+    border-radius: 8px
+}
+
+
+.contentCurso {
+    display: flex;
+    flex-direction: column;
+    width: 900px;
+    height: 60px;
+    background: #F8F8F8 0% 0% no-repeat padding-box;
+    border: 1px solid #00000000;
+    border-radius: 10px;
+    opacity: 1;
+}
+
+
+.cardImage img {
+    max-width: 100%;
+    max-height: 100%;
+    position: relative;
+    bottom: 54px;
+}
+
+.containerCards {
+    height: 88px;
+    text-align: center;
+    font: normal normal medium 20px/30px Poppins;
+    color: #00386A;
+    opacity: 1;
+    padding-top: 61px;
+}
+
+.containerCards h1 {
+    font-size: 30px;
+    color: #00386A;
+    font-family: poppins;
+    font-weight: bold;
+}
+
+.hidden {
+    display: none;
+}
+
+.content {
+    display: flex;
+    gap: 20px;
+    padding: 59px 0 59px 59px;
+}
+
+.cardContent {
+    display: flex;
+    justify-content: space-between;
+    background: #F8F8F8;
+    height: 60px;
+    align-items: center;
+    padding: 0 10px;
+    border-radius: 6px;
+}
+
+.modalContent {
+    width: 800px;
+}
+
+
+button#closeModalButton {
+    display: flex;
+    width: 114px;
+    height: 43px;
+    border: none;
+    background: transparent;
+    position: relative;
+    align-items: center;
+    gap: 6px;
+    cursor: pointer;
+    font-family: 'Poppins';
+    font-size: 30px;
+    color: #00386A;
+    font-weight: bold;
+}
+
+.icon {
+    width: 34px;
+    height: 34px;
+}
+
+.cardContent h1 {
+    font-size: 30px;
+    color: #00386A;
+    font-family: poppins;
+    font-weight: bold;
+}
+
+p.pharagraf {
+    padding-top: 31px;
+    font-family: poppins;
+    font-weight: 500;
+    font-size: 18px;
+}
+
+button.btnAdd {
+    position: relative;
+    top: 35px;
+    background: #1974C6;
+    color: #ffffff;
+    border: none;
+    width: 219px;
+    height: 40px;
+    font-size: 20px;
+    font-family: 'Poppins';
+    cursor: pointer;
+}
+
+
+@media(max-width:500px) {
+    .content {
+        flex-direction: column;
+        padding: 20px;
+        gap: 36px;
+    }
+
+    p.pharagraf {
+        font-size: 15px;
+    }
+
+    .cardImage {
+        width: 100%;
+        height: 92px;
+    }
+
+    .cardContent {
+        width: 100%;
+        height: 41px;
+    }
+
+    .containerCards {
+        width: 344px;
+    }
+
+    .containerCards h1 {
+        font-size: 20px;
+    }
+
+    .containerCards {
+        width: 100%;
+        /* Ajusta al ancho de la pantalla */
+    }
+
+    .modalContent {
+        width: 100%;
+    }
+
+    div#myModal {
+        padding-top: 59px;
+    }
+
+    .cardContent h1 {
+        font-size: 20px;
+    }
+
+    .cardImage {
+        justify-content: flex-start;
+        padding: 10px;
+    }
+
+    .cardImage img {
+        max-width: 68px;
+        max-height: 68px;
+        bottom: 0px;
+    }
+
+    button#closeModalButton {
+        font-size: 20px;
+        width: 83px;
+    }
+
+    .icon {
+        width: 24px;
+        height: 24px;
+    }
+}
+
+/* form */
+
+.cardImageForm {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 470px;
+    height: 500px;
+    background: #FFFFFF;
+    box-shadow: 0px 0px 10px #02396B4D;
+    opacity: 1;
+    z-index: 1;
+    border-radius: 8px
+}
+
+button#closeModalButtonForm {
+    display: flex;
+    width: 114px;
+    height: 43px;
+    border: none;
+    background: transparent;
+    position: relative;
+    align-items: center;
+    gap: 6px;
+    cursor: pointer;
+    font-family: 'Poppins';
+    font-size: 30px;
+    color: #00386A;
+    font-weight: bold;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 70px;
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    color: #00386A;
+    font-family: 'poppins';
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.form-group input {
+    order: 2;
+    width: 520px;
+    height: 50px;
+    border: none;
+    border-radius: 10px;
+    background: #F8F8F8;
+    padding: 10px;
+    color: #00386A;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+form#myForm {
+    padding-top: 43px;
+    gap: 19px;
+    display: flex;
+    flex-direction: column;
+}
+
+button#btnCancel {
+    width: 226px;
+    height: 44px;
+    border: 2px solid #1974C6;
+    border-radius: 2px;
+    color: #1974C6;
+    font-size: 20px;
+    background: #ffffff;
+    cursor: pointer;
+}
+
+button#btnKeep {
+    width: 226px;
+    height: 44px;
+    border: 2px solid #1974C6;
+    border-radius: 2px;
+    background: #1974C6;
+    color: #FFFFFF;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.btnEdit {
+    width: 108px;
+    height: 44px;
+    border-radius: 2px;
+    background: #1974C6;
+    color: #FFFFFF;
+    font-size: 20px;
+    border: none;
+    cursor: pointer;
+}
+
+.forBtn {
+    display: flex;
+    gap: 64px;
+    padding-top: 30px;
+}
+
+
+.password-input {
+    position: relative;
+
+}
+
+
+
+.toggle-password {
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    cursor: pointer;
+    transform: translateY(-50%);
+}
+
+.toggle-password {
+    cursor: pointer;
+    user-select: none;
+}
+
+.toggle-password.active {
+    color: black;
+}
+
+img.icons {
+    display: none;
+}
+
+@media(max-width:500px) {
+    .form-group input {
+        width: 100%;
+        height: 50px;
+    }
+
+    form#myForm {
+        padding-top: 15px;
+        overflow: hidden;
+        gap: 22px;
+    }
+
+    img.icons {
+        display: block;
+    }
+
+    .cardImageForm {
+        width: 360px;
+        height: 92px;
+        display: block;
+    }
+
+    .cardImageForm img {
+        width: 86px;
+        height: 71px;
+        position: relative;
+        top: 10px;
+
+    }
+
+    .btnEdit {
+        display: none;
+    }
+
+    .forBtn {
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+        align-items: center;
+        padding-top: 22px;
+    }
+
+    .form-group label {
+        color: #00386A;
+        font-family: 'poppins';
+        font-weight: bold;
+        font-size: 16px;
+        width: 326px;
+    }
+
+    .toggle-password {
+        left: 308px;
+    }
+
+    button#closeModalButtonForm {
+        width: 80px !important;
+        height: 31px !important;
+        font-size: 20px !important;
+    }
+
+    button#editBtns {
+        border: none;
+        background: transparent;
+    }
+
+    img.icons {
+        border: none;
+        width: 24px;
+        height: 24px;
+        position: relative;
+        left: 55px;
+        top: -16px;
+    }
+
+    .modal-content {
+        width: 90% !important;
+        margin: 4% 6% !important;
+    }
+
+    .modal-children {
+        position: fixed;
+        top: 104px !important;
+        left: 0;
+        z-index: 1;
+        cursor: pointer;
+
+    }
+
+    .logos-grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr) !important;
+        justify-items: center;
+        background: #02396B4D;
+        row-gap: 1px;
+    }
+
+
+}
+
+
+.modal-children{
+    display: none;
+    position: fixed;
+    top: 113px;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+    z-index: 1;
+}
+
+.modal-content {
+    background-color: #fff;
+    margin: 4% 551px;
+    ;
+    padding: 20px;
+    width: 50%;
+    border-radius: 5px;
+    text-align: center;
+    width: 649px;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    box-shadow: 0px 0px 10px #02396B4D;
+}
+
+.close {
+    color: #888;
+    float: right;
+    font-size: 28px;
+    cursor: pointer;
+}
+
+.close:hover,
+.close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+
+.logos-grid {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    justify-items: center;
+    background: #02396B4D;
+    row-gap: 1px;
+}
+
+.logo-item {
+    text-align: center;
+    background: white;
+    width: 100%;
+    height: 71px;
+}
+
+.logo-item img {
+    max-width: 56px;
+}
+
+
+div .containerCards {
+    display: none;
+}
+
+div .containerCards:only-child {
+    display: block;
+}
+
+.containerCardsEdit {
+    padding-top: 48px;
+}
+
+.give-away-ourse {
+    display: flex;
+    align-items: center;
+    padding-top: 50px;
+    text-align: center;
+    justify-content: center;
+    gap: 134px;
+}
+
+.logo-item-img {
+    display: flex;
+    flex-direction: column;
+}
+
+button#giveBtn {
+    height: 32px;
+    background: #1974C6;
+    border: none;
+    color: #ffffff;
+    font-size: 20px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+button#giveBtns {
+    height: 32px;
+    background: #1974C6;
+    border: none;
+    color: #ffffff;
+    font-size: 20px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.give-away-ourse h2 {
+    color: #00386A;
+    font-size: 20px;
+    font-family: 'Poppins';
+}
+
+p.pharagraf-give-away-ourse {
+    font-size: 18px;
+    text-align: center;
+    color: #00386A;
+    font-weight: 500;
+    font-family: 'poppins';
+}
+
+@media(max-width:500px) {
+    .give-away-ourse {
+        flex-direction: column;
+        gap: 20px;
+        padding-top: 10px;
+    }
+
+    p.pharagraf-give-away-ourse {
+        font-size: 15px !important;
+    }
+
+    .containerCardsEdit {
+        padding-top: 33px;
+    }
+
+    .give-away-ourse h2 {
+        font-size: 15px;
+    }
+
+    button#giveBtn {
+        font-size: 16px;
+    }
+}
+
+.divcontainer {
+    display: flex;
+    width: 800px;
+    height: 275px;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    box-shadow: 0px 0px 10px #02396B4D;
+    opacity: 1;
+}
+
+.container-alert {
+    padding-top: 37px;
+}
+
+.logo-item-img-alert h2 {
+    font-size: 20px;
+    color: #00386A;
+    font-weight: bold;
+    font-family: 'Poppins';
+}
+
+.logo-item-img-alert {
+    padding: 19px;
+    width: 257px;
+}
+
+.content-alert h3 {
+    color: #00386A;
+    font-size: 20px;
+    text-align: center;
+    font-family: 'Poppins';
+}
+
+.content-alert h4 {
+    color: #00386A;
+    font-size: 20px;
+    text-align: center;
+    font-family: 'Poppins';
+}
+
+.content-alert {
+    padding: 20px;
+    position: relative;
+    top: 20px;
+}
+
+.butons-alert {
+    display: flex;
+    position: relative;
+    left: 111px;
+    padding-top: 24px;
+    align-items: center;
+    width: 55%;
+    gap: 18px;
+}
+
+button#btnCancelAlert {
+    width: 144px;
+    height: 36px;
+    color: #ffffff;
+    background: #1974C6;
+    border: none;
+    font-size: 20px;
+    font-family: 'Poppins';
+    font-weight: bold;
+    cursor: pointer;
+}
+
+button#btnAssign {
+    width: 144px;
+    height: 36px;
+    color: #1974C6;
+    background: #FFFFFF;
+    border: 2px solid #1974C6;
+    font-size: 20px;
+    font-family: 'Poppins';
+    font-weight: bold;
+    cursor: pointer;
+}
+
+@media(max-width:500px) {
+    .divcontainer {
+        flex-direction: column;
+        width: 100%;
+        height: 478px;
+    }
+
+
+    .logo-item-img-alert {
+        text-align: center;
+        width: unset;
+    }
+
+    .content-alert h3 {
+        font-size: 16px;
+        bottom: 25px;
+        position: relative;
+    }
+
+    .content-alert h4 {
+        color: #00386A;
+        font-size: 18px;
+        text-align: center;
+        font-family: 'Poppins';
+        position: relative;
+        bottom: 13px;
+    }
+
+    .butons-alert {
+        left: 62px;
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+        align-items: center;
+        bottom: 10px;
+    }
+
+    .content-alert {
+        bottom: 13px;
+    }
+}
+
+.containerCardsEdit {
+    position: relative; 
+}
+
+.container-alert {
+    position: absolute; 
+    top: 69px;
+    left: 0; 
+    z-index: 1000;
+    padding: 20px;
+    display: none; 
+}

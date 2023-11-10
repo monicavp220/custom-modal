@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modal Umake</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css">
+
+</head>
+
+<body>
+
+    <button id="openModalButton">Abrir modal</button>
+
+    <article class="container">
+
+        <div class="modalCurso hidden" id="myModal">
+            <div class="content">
+                <div class="cardImage">
+                    <img src="https://cdn-umake.s3.us-east-2.amazonaws.com/wp-content/uploads/2023/11/07181248/Avatar.svg"
+                        alt="Descripción de la imagen">
+                </div>
+                <div class="modalContent">
+                    <div class="cardContent">
+                        <h1>Regalar curso</h1>
+                        <button id="closeModalButton" class="btnClose">Salir
+                            <img class="icon"
+                                src="https://cdn-umake.s3.us-east-2.amazonaws.com/wp-content/uploads/2023/11/07194243/Icono_Cerrar.svg"
+                                alt="Cerrar">
+                        </button>
+
+                    </div>
+
+                    <div class="container-give-away-ourse">
+                        <div class="containerCards">
+                            <h1>Aún no tienes perfiles registrados</h1>
+                            <p class="pharagraf">Crea perfiles individuales para tus hijos. Esta personalización asegura
+                                que
+                                cada lección de
+                                robótica
+                                sea una experiencia hecha a medida, nutriendo sus mentes curiosas y fomentando su
+                                creatividad.
+                                ¡Haz
+                                que cada aprendizaje sea tan único como tu hijo/a!</p>
+
+                            <button class="btnAdd" id="btnCreateProfile">Crear nuevo perfil</button>
+                        </div>
+                        <div class="containerCardsEdit">
+
+                            <p class="pharagraf-give-away-ourse">
+                                Selecciona a tu pequeño/a para regalarle una experiencia
+                                inolvidable en el mundo de la robótica. Elige a tu hijo/a y despierta su creatividad
+                                y curiosidad con nuestros emocionantes cursos. ¡Haz que su viaje tecnológico
+                                comience hoy!”</p>
+
+                            <div class="give-away-ourse">
+
+                                <div class="logo-item-img">
+                                    <img src="img/1.svg" alt="Logo 1">
+                                    <h2>Nombre del perfil</h2>
+                                    <button id="giveBtn" class="btngive">Regalar
+                                    </button>
+                                </div>
+
+
+                                <div class="logo-item-img">
+                                    <img src="img/1.svg" alt="Logo 1">
+                                    <h2>Nombre del perfil</h2>
+                                    <button id="giveBtns" class="btngive">Regalar
+                                    </button>
+                                </div>
+
+
+                            </div>
+
+                            <div class="container-alert" style="display: none;">
+                                <div class="divcontainer">
+                                    <div class="logo-item-img-alert">
+                                        <img src="img/1.svg" alt="Logo 1">
+                                        <h2>Nombre del perfil</h2>
+                                    </div>
+
+                                    <div class="content-alert">
+                                        <h3>¿Estás seguro que deseas regalar este curso a Camilo Villamizar?</h3>
+                                        <h4>Esta acción es ireversible</h4>
+                                        <div class="butons-alert">
+                                            <button class="btnCancelAlert" id="btnCancelAlert">Cancelar</button>
+                                            <button class="btnAssign" id="btnAssign">Asignar</button>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+    </article>
+
+
+    <article class="container">
+        <!-- <span class="close" id="closeModal">&times;</span> -->
+
+        <div class="modalCurso hidden editar" id="myModalForm">
+            <div class="content">
+                <div class="cardImageForm">
+                    <div id="img-cars-edit">
+                        <img src="https://cdn-umake.s3.us-east-2.amazonaws.com/wp-content/uploads/2023/11/07181248/Avatar.svg"
+                            alt="Descripción de la imagen">
+                    </div>
+                    <button id="editBtn" class="btnEdit">Editar
+                        <img class="icons"
+                            src="https://cdn-umake.s3.us-east-2.amazonaws.com/wp-content/uploads/2023/11/08092938/Icono_mas.svg"
+                            alt="Cerrar">
+                    </button>
+
+                    <button id="editBtns" class="btnEdits">
+                        <img class="icons"
+                            src="https://cdn-umake.s3.us-east-2.amazonaws.com/wp-content/uploads/2023/11/08092938/Icono_mas.svg"
+                            alt="Cerrar" id="iconscard">
+                    </button>
+                </div>
+                <div id="my-modal-children" class="modal-children">
+                    <div class="modal-content">
+                        <span class="close" id="closeModal">&times;</span>
+                        <div class="logos-grid" id="imag-logo-card">
+
+                            <div class="logo-item">
+                                <img src="https://cdn-umake.s3.us-east-2.amazonaws.com/wp-content/uploads/2023/11/09141507/1.svg" alt="Logo 1">
+                                <label for="logo1"></label>
+                            </div>
+                            <div class="logo-item">
+                                <img src="https://cdn-umake.s3.us-east-2.amazonaws.com/wp-content/uploads/2023/11/09141509/2.svg" alt="Logo 2">
+                                <label for="logo2"></label>
+                            </div>
+                            <div class="logo-item">
+                                <img src="https://cdn-umake.s3.us-east-2.amazonaws.com/wp-content/uploads/2023/11/09141511/3.svg" alt="Logo 3">
+                                <label for="logo3"></label>
+                            </div>
+                            <div class="logo-item">
+                                <img src="https://cdn-umake.s3.us-east-2.amazonaws.com/wp-content/uploads/2023/11/09141513/4.svg" alt="Logo 4">
+                                <label for="logo4"></label>
+                            </div>
+                            <div class="logo-item">
+                                <img src="https://cdn-umake.s3.us-east-2.amazonaws.com/wp-content/uploads/2023/11/09141515/5.svg" alt="Logo 5">
+                                <label for="logo5"></label>
+                            </div>
+                            <div class="logo-item">
+                                <img src="https://cdn-umake.s3.us-east-2.amazonaws.com/wp-content/uploads/2023/11/09141517/6.svg"
+                                    alt="Logo 6">
+                                <label for="logo6"></label>
+                            </div>
+                            <div class="logo-item">
+                                <img src="https://cdn-umake.s3.us-east-2.amazonaws.com/wp-content/uploads/2023/11/09142033/Grupo-5510.svg"
+                                    alt="Logo 7">
+                                <label for="logo7"></label>
+                            </div>
+                            <div class="logo-item">
+                                <img src="https://cdn-umake.s3.us-east-2.amazonaws.com/wp-content/uploads/2023/11/09142035/Grupo-5511.svg"
+                                    alt="Logo 8">
+                                <label for="logo8"></label>
+                            </div>
+                            <div class="logo-item">
+                                <img src="https://cdn-umake.s3.us-east-2.amazonaws.com/wp-content/uploads/2023/11/09142036/Grupo-5512.svg"
+                                    alt="Logo 9">
+                                <label for="logo9"></label>
+                            </div>
+                            <div class="logo-item">
+                                <img src="https://cdn-umake.s3.us-east-2.amazonaws.com/wp-content/uploads/2023/11/09142038/Grupo-5513.svg"
+                                    alt="Logo 10">
+                                <label for="logo10"></label>
+                            </div>
+                            <div class="logo-item">
+                                <img src="https://cdn-umake.s3.us-east-2.amazonaws.com/wp-content/uploads/2023/11/09142039/Grupo-5514.svg"
+                                    alt="Logo 11">
+                                <label for="logo11"></label>
+                            </div>
+                            <div class="logo-item">
+                                <img src="https://cdn-umake.s3.us-east-2.amazonaws.com/wp-content/uploads/2023/11/09142040/Grupo-5515.svg"
+                                    alt="Logo 12">
+                                <label for="logo12"></label>
+                            </div>
+                            <div class="logo-item">
+                                <img src="https://cdn-umake.s3.us-east-2.amazonaws.com/wp-content/uploads/2023/11/09142042/Grupo-5521.svg"
+                                    alt="Logo 13">
+                                <label for="logo13"></label>
+                            </div>
+                            <div class="logo-item">
+                                <img src="https://cdn-umake.s3.us-east-2.amazonaws.com/wp-content/uploads/2023/11/09142043/Grupo-5520.svg"
+                                    alt="Logo 14">
+                                <label for="logo14"></label>
+                            </div>
+                            <div class="logo-item">
+                                <img src="https://cdn-umake.s3.us-east-2.amazonaws.com/wp-content/uploads/2023/11/09142045/Grupo-5519.svg"
+                                    alt="Logo 15">
+                                <label for="logo15"></label>
+                            </div>
+                            <div class="logo-item">
+                                <img src="https://cdn-umake.s3.us-east-2.amazonaws.com/wp-content/uploads/2023/11/09142046/Grupo-5518.svg"
+                                    alt="Logo 16">
+                                <label for="logo16"></label>
+                            </div>
+                            <div class="logo-item">
+                                <img src="https://cdn-umake.s3.us-east-2.amazonaws.com/wp-content/uploads/2023/11/09142048/Grupo-5517.svg"
+                                    alt="Logo 17">
+                                <label for="logo17"></label>
+                            </div>
+                            <div class="logo-item">
+                                <img src="https://cdn-umake.s3.us-east-2.amazonaws.com/wp-content/uploads/2023/11/09142049/Grupo-5516.svg"
+                                    alt="Logo 18">
+                                <label for="logo18"></label>
+                            </div>
+
+
+                        </div>
+                    </div>
+                </div>
+
+                <div class="modalContent">
+                    <div class="cardContent">
+                        <h1>Crear nuevo perfil</h1>
+                        <button id="closeModalButtonForm" class="btnClose">Salir
+                            <img class="icon"
+                                src="https://cdn-umake.s3.us-east-2.amazonaws.com/wp-content/uploads/2023/11/07194243/Icono_Cerrar.svg"
+                                alt="Cerrar">
+                        </button>
+                    </div>
+
+                    <form id="myFormChildrens">
+                        <div class="form-group">
+                            <label for="name-form">Escribe el nombre de tu hijo/a</label>
+                            <input type="text" id="name-form" name="name-form" required>
+                            <span class="error" id="error-name"></span>
+                        </div>
+                        <div class="form-group">
+                            <label for="usuario">Escribe un usuario para tu hijo/a</label>
+                            <input type="text" id="usuario" name="usuario" required>
+                            <span class="error" id="error-usuario"></span>
+                        </div>
+                        <div class="form-group">
+                            <label for="password">Escribe una contraseña para el ingreso de tu hijo/a</label>
+                            <div class="password-input">
+                                <input type="password" id="password" name="password" required>
+                                <i class="toggle-password fas fa-eye" id="toggle-password"></i>
+                            </div>
+                            <span class="error" id="error-password"></span>
+                        </div>
+                        <div class="form-group">
+                            <label for="confirm-password">Repite la contraseña nuevamente</label>
+                            <div class="password-input">
+                                <input type="password" id="confirm-password" name="confirm-password" required>
+                                <i class="toggle-password fas fa-eye" id="toggle-confirm-password"></i>
+                            </div>
+                            <span class="error" id="error-confirm-password"></span>
+                        </div>
+                        <div class="forBtn">
+                            <button id="btnCancel" class="btnCancel">Cancelar</button>
+                            <button type="submit" id="btnKeep" class="btnsKeep">Guardar cambios</button>
+                        </div>
+                    </form>
+
+                </div>
+
+
+            </div>
+
+        </div>
+    </article>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="script.js"></script>
+</body>
+
+
+</html>
